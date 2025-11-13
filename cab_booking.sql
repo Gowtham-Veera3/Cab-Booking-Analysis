@@ -1,9 +1,9 @@
+create database ola_cab_booking;
 use ola_cab_booking;
 show tables;
 describe bengaluru_ola_booking_data;
 select *
 from bengaluru_ola_booking_data;
-
 
 -- ==========================================================
 -- CUSTOMER & BOOKING ANALYSIS
@@ -26,7 +26,6 @@ FROM bengaluru_ola_booking_data
 GROUP BY Customer_ID
 HAVING cancel_rate > 30;
 
-
 -- 3. Busiest day of the week for bookings
 SELECT DAYNAME(ride_date) AS day, COUNT(*) AS total_bookings
 FROM bengaluru_ola_booking_data
@@ -35,7 +34,6 @@ ORDER BY total_bookings DESC;
 
 -- ==========================================================
 -- DRIVER PERFORMANCE & EFFICIENCY
--- (adapted since no Driver_ID column)
 -- ==========================================================
 
 -- 4. Customers experiencing avg driver ratings < 4.0 in past 3 months
@@ -45,9 +43,6 @@ WHERE Booking_Status = 'Success'
 AND Ride_Date >= DATE_SUB((SELECT MAX(ride_date) FROM bengaluru_ola_booking_data), INTERVAL 3 MONTH)
 GROUP BY Customer_ID
 HAVING avg_rating < 4.0;
-
-
-
 
 -- 5. Top 5 longest trips by distance
 SELECT Customer_ID, MAX(Ride_Distance) AS longest_trip
@@ -148,7 +143,6 @@ FROM bengaluru_ola_booking_data
 GROUP BY Customer_ID
 ORDER BY days_inactive DESC
 limit 100;
-
 
 -- 15. Weekend vs weekday bookings
 SELECT CASE 
