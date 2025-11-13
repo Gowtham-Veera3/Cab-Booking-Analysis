@@ -14,17 +14,20 @@ The analysis is performed using **SQL queries** on real-world-like data (Bengalu
 5. Comparative & Predictive Analysis.
 
 ---
+
 ## 📈 Insights & Findings
 
-Most bookings occur on Fridays and Saturdays, indicating weekend demand peaks.
+1. Most bookings occur on Fridays and Saturdays, indicating weekend demand peaks.
 
-A few top customers contribute to a large share of total rides.
+2. A few top customers contribute to a large share of total rides.
 
-Drivers with higher ratings complete more rides and generate more revenue.
+3. Drivers with higher ratings complete more rides and generate more revenue.
 
-Short-distance trips make up a significant portion of total bookings.
+4. Short-distance trips make up a significant portion of total bookings.
 
-SUV cabs generate higher revenue per ride but lower overall volume.
+5. SUV cabs generate higher revenue per ride but lower overall volume.
+
+---
 
 👨‍💻 Author
 
