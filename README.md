@@ -35,5 +35,5 @@ The analysis is performed using **SQL queries** on real-world-like data (Bengalu
 ## 👨‍💻 Author
 
 T Karthikeya Veera Gowtham
-🎓 B.Tech - Computer Science & Engineering,
+🎓 B.Tech - Computer Science & Engineering
 📧 gowthamthamballa03@gmail.com
